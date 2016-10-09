@@ -1,0 +1,126 @@
+/**
+ * res/style.css - publicist
+ * Printable styles.
+ *
+ * Copyright (C) 2016 Karim Alibhai.
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Times New Roman';
+    font-size: 1em;
+}
+
+@page {
+    margin: 10mm 5mm;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    width: 100%;
+    display: block;
+    text-align: justify;
+}
+
+header.all {
+    position: fixed;
+    top: 0;
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #000;
+
+    page-break-before: always;
+    page-break-inside: avoid;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+header {
+    padding-top: 10px;
+    background: #fff;
+}
+
+header,
+footer,
+body > section {
+    width: 80%;
+    margin-left: 10%;
+}
+
+header.page > .left {
+    float: left;
+}
+
+header.page > .right {
+    float: right;
+}
+
+header.page > p {
+    width: auto;
+}
+
+header.page > .clearfix {
+    float: none;
+    clear: both;
+}
+
+.top > h1 {
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.top > h1,
+.top > .author {
+    text-align: center;
+}
+
+.top > .author {
+    margin-bottom: 20px;
+}
+
+.top > .abstract {
+    font-style: italic;
+    text-align: justify;
+
+    width: 80%;
+    margin-left: 10%;
+}
+
+section > h1,
+section > h2,
+section > h3,
+section > h4,
+section > h5,
+section > h6 {
+    text-align: left;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 1.2em;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+section:not(.top) p {
+    text-indent: 2em;
+}
