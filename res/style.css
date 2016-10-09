@@ -42,6 +42,10 @@ header.all {
     border-bottom: solid 1px #000;
 
     page-break-before: always;
+}
+
+header,
+.MJXc-display {
     page-break-inside: avoid;
 }
 
@@ -53,6 +57,7 @@ footer {
 header {
     padding-top: 10px;
     background: #fff;
+    page-break-before: avoid;
 }
 
 header,
