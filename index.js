@@ -24,6 +24,8 @@ program.command('init [directory]').alias('i')
 program.command('build [directory]').alias('b')
        .description('compiles publication into output forms')
        .option('-f, --format [types]', 'set the formats to build', list => list.split(',').reduce((a, b) => a && /^(pdf)$/i.test(b)), 'pdf')
+       .option('-t, --template [file]', 'use a custom ejs template file', __dirname + '/res/index.ejs')
+       .option('-s, --style [stylesheet]', 'use a custom stylesheet file')
        .action($( require('./lib/build') ))
 
 program.parse(process.argv)

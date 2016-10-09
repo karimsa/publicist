@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <%- head %>
+    <body>
+        <%- style %>
+
+        <header class="all">
+            <span class="author"><%- author %></span>
+        </header>
+        <!--<footer>
+            <span>DRAFT</span>
+        </footer>-->
+
+        <header class="page">
+            <p class="left">DRAFT</p>
+            <p class="right">(<%- year  %>)</p>
+            <div class="clearfix"></div>
+        </header>
+
+        <section class="top">
+            <h1><%- title %></h1>
+            <p class="author"><%- author %></p>
+            <p class="abstract"><strong>Abstract.</strong> <%- abstract %></p>
+        </section>
+
+        <%- compiled %>
+    </body>
+</html>
